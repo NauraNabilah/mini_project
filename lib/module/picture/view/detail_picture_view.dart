@@ -18,7 +18,7 @@ class DetailPictureView extends StatelessWidget {
         return detail.isEmpty
             ? Center(child: Text('No detail available'))
             : Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Image.network(detail['download_url']),
                   SizedBox(height: 10),
